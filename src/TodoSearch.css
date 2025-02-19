@@ -1,0 +1,24 @@
+.styled-input {
+    background-color: red; /* Fondo rojo */
+    color: white; /* Texto blanco */
+    border: 5px solid white; /* Borde blanco */
+    box-shadow: 2px 2px 5px black; /* Sombra negra */
+    font-size: 16px; /* Tamaño de texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes ligeramente redondeados */
+    text-align: center; /* Texto centrado */
+    font-weight: bold; /* Texto en negrita */
+    outline: none; /* Quita el borde azul al enfocar */
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; /* Contorno negro */
+}
+
+.styled-input::placeholder {
+  color: white; /* Color del texto del placeholder */
+  opacity: 1; /* Transparencia del placeholder */
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black; /* Contorno negro */
+}
+
+body {
+  text-align: center; /* Centra horizontalmente */
+  margin: 0; /* Elimina márgenes por defecto */
+}

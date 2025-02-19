@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'EarwigFactory';
+    src: url('/public/fonts/earwig factory rg.otf') format('opentype'); /* Usa '/' */
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: 'EarwigFactory', sans-serif; /* Asegura que esta fuente se aplique */
+    text-align: center; /* Alineación centrada */
+    font-size: 50px;
+}

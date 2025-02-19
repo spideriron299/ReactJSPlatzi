@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'EarwigFactory';
+    src: url('/public/fonts/earwig factory rg.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Altura completa de la ventana */
+    margin: 0; /* Elimina márgenes predeterminados */
+    background-color: red; /* Fondo rojo */
+  }
+  
+  .TodoItem {
+    display: flex; /* Flexbox para alinear elementos en línea */
+    align-items: center; /* Alineación vertical de los elementos */
+    gap: 10px; /* Espacio entre los elementos */
+    list-style: none; /* Elimina estilo de lista */
+  }
+  
+  .image-input {
+    width: 50px; /* Tamaño del botón */
+    height: 50px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border: none; /* Sin borde */
+  }
+  
+  .TodoItem-p {
+    font-family: 'EarwigFactory', sans-serif;
+    font-size: 30px; /* Tamaño del texto */
+    color: black;
+    margin: 0; /* Elimina márgenes del párrafo */
+  }
+  

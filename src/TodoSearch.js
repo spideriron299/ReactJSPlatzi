@@ -1,6 +1,13 @@
+import './TodoSearch.css';
+
 function TodoSearch() {
     return (
-        <input placeholder="Cortar cebolla" />
+        <input
+            placeholder="Escribe tu proposito"
+            class="styled-input"
+            type='text'
+            position='center'
+            />
     );
 }
 

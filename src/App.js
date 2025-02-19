@@ -3,7 +3,7 @@ import { TodoSearch } from './TodoSearch';
 import { TodoList } from './TodoList';
 import { TodoItem } from './TodoItems';
 import { CreateTodoButton } from './CreateTodoButton';
-import './App.css';
+
 import React from 'react';
 
 const defaultTodos = [
