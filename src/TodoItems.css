@@ -11,7 +11,7 @@
     align-items: center; /* Centrar verticalmente */
     height: 100vh; /* Altura completa de la ventana */
     margin: 0; /* Elimina márgenes predeterminados */
-    background-color: red; /* Fondo rojo */
+    background-color: white; /* Fondo rojo */
   }
   
   .TodoItem {
@@ -34,4 +34,13 @@
     color: black;
     margin: 0; /* Elimina márgenes del párrafo */
   }
+
+  .Icon-image {
+    width: 40px; /* Ajusta el tamaño deseado */
+    height: auto; /* Mantén la proporción de la imagen */
+    
+  }
   
+  .Icon-check--active {
+    color: #4caf50;
+  }
