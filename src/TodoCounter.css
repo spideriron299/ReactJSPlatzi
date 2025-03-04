@@ -1,13 +1,11 @@
-@font-face {
-    font-family: 'EarwigFactory';
-    src: url('/public/fonts/earwig factory rg.otf') format('opentype'); /* Usa '/' */
-    font-weight: normal;
-    font-style: normal;
+.TodoCounter {
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  padding: 48px;
+  font-weight: normal;
 }
 
-
-h1 {
-    font-family: 'EarwigFactory', sans-serif; /* Asegura que esta fuente se aplique */
-    text-align: center; /* Alineación centrada */
-    font-size: 50px;
+.TodoCounter span {
+  font-weight: bold;
 }

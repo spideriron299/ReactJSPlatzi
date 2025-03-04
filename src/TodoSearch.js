@@ -1,14 +1,12 @@
 import './TodoSearch.css';
 
 function TodoSearch() {
-    return (
-        <input
-            placeholder="Escribe tu proposito"
-            class="styled-input"
-            type='text'
-            position='center'
-            />
-    );
+  return (
+    <input
+      placeholder="Cortar cebolla"
+      className="TodoSearch"
+    />
+  );
 }
 
 export { TodoSearch };
