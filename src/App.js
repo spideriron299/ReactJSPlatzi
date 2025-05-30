@@ -47,12 +47,12 @@ function App() {
     newTodos.splice(todoIndex, 1);
     setTodos(newTodos);
   };
-  
+
   return (
     <>
       <TodoCounter
         completed={completedTodos}
-        total={totalTodos} 
+        total={totalTodos}
       />
       <TodoSearch
         searchValue={searchValue}
@@ -70,7 +70,7 @@ function App() {
           />
         ))}
       </TodoList>
-      
+
       <CreateTodoButton />
     </>
   );
