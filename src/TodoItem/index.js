@@ -1,5 +1,5 @@
 import { CompleteIcon } from '../TodoIcon/CompleteIcon'
-import { DeletedIcon } from '../TodoIcon/DeletedIcon'
+import { DeleteIcon } from '../TodoIcon/DeleteIcon'
 import './TodoItem.css';
 
 function TodoItem(props) {
@@ -14,7 +14,7 @@ function TodoItem(props) {
         {props.text}
       </p>
 
-      <DeletedIcon
+      <DeleteIcon
         onDelete={props.onDelete}
       />
     </li>

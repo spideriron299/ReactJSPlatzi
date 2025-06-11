@@ -1,23 +1,23 @@
-import { TodoCounter } from '../TodoCounter/';
+import { TodoCounter } from '../TodoCounter';
 import { TodoSearch } from '../TodoSearch';
 import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem/';
+import { TodoItem } from '../TodoItem';
 import { CreateTodoButton } from '../CreateTodoButton';
 
 function AppUI({
-    completedTodos,
-    searchValue,
-    setSearchValue,
-    searchedTodos,
-    completeTodo,
-    deleteTodo,
-    totalTodos
-}){
-return (
+  completedTodos,
+  totalTodos,
+  searchValue,
+  setSearchValue,
+  searchedTodos,
+  completeTodo,
+  deleteTodo,
+}) {
+  return (
     <>
       <TodoCounter
         completed={completedTodos}
-        total={totalTodos}
+        total={totalTodos} 
       />
       <TodoSearch
         searchValue={searchValue}
@@ -35,6 +35,7 @@ return (
           />
         ))}
       </TodoList>
+      
       <CreateTodoButton />
     </>
   );

@@ -13,10 +13,7 @@ import { useLocalStorage } from './useLocalStorage';
 // localStorage.setItem('TODOS_V1', JSON.stringify(defaultTodos));
 // localStorage.removeItem('TODOS_V1');
 
-
-
 function App() {
-
   const [todos, saveTodos] = useLocalStorage('TODOS_V1', []);
   const [searchValue, setSearchValue] = React.useState('');
 
@@ -24,6 +21,22 @@ function App() {
     todo => !!todo.completed
   ).length;
   const totalTodos = todos.length;
+
+  console.log('Log 1');
+
+  // React.useEffect(() => {
+  //   console.log('Loooooooog 2');
+  // });
+
+  // React.useEffect(() => {
+  //   console.log('Loooooooog 2');
+  // }, []);
+
+  React.useEffect(() => {
+    console.log('Loooooooog 2');
+  }, [totalTodos]);
+
+  console.log('Log 3');
 
   const searchedTodos = todos.filter(
     (todo) => {
@@ -50,16 +63,16 @@ function App() {
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
   };
-
+  
   return (
     <AppUI
-    completedTodos={completedTodos}
-    totalTodos={totalTodos}
-    searchValue={searchValue}
-    setSearchValue={setSearchValue}
-    searchedTodos={searchedTodos}
-    completeTodo={completeTodo}
-    deleteTodo={deleteTodo}
+      completedTodos={completedTodos}
+      totalTodos={totalTodos}
+      searchValue={searchValue}
+      setSearchValue={setSearchValue}
+      searchedTodos={searchedTodos}
+      completeTodo={completeTodo}
+      deleteTodo={deleteTodo}
     />
   );
 }
