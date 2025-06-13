@@ -6,29 +6,22 @@ import { TodosLoading } from '../TodosLoading';
 import { TodosError } from '../TodosError';
 import { EmptyTodos } from '../EmptyTodos';
 import { CreateTodoButton } from '../CreateTodoButton';
+import { TodoContext } from '../TodoContext';
 
-function AppUI({
-  loading,
-  error,
-  completedTodos,
-  totalTodos,
-  searchValue,
-  setSearchValue,
-  searchedTodos,
-  completeTodo,
-  deleteTodo,
-}) {
+function AppUI() {
   return (
     <>
-      <TodoCounter
-        completed={completedTodos}
-        total={totalTodos} 
-      />
-      <TodoSearch
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}
-      />
+      <TodoCounter/>
+      <TodoSearch/>
 
+    <TodoContext.Consumer>
+      {({
+        loading,
+        error,
+        searchedTodos,
+        completeTodo,
+        deleteTodo,
+      }) =>(
       <TodoList>
         {loading && (
           <>
@@ -49,8 +42,8 @@ function AppUI({
             onDelete={() => deleteTodo(todo.text)}
           />
         ))}
-      </TodoList>
-      
+      </TodoList>)}
+    </TodoContext.Consumer>
       <CreateTodoButton />
     </>
   );
