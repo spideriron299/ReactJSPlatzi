@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ReactJSPlatzi/static/css/main.99fe6ab6.css",
+    "main.js": "/ReactJSPlatzi/static/js/main.189cbc9e.js",
+    "index.html": "/ReactJSPlatzi/index.html",
+    "static/media/delete.svg": "/ReactJSPlatzi/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/check.svg": "/ReactJSPlatzi/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.99fe6ab6.css.map": "/ReactJSPlatzi/static/css/main.99fe6ab6.css.map",
+    "main.189cbc9e.js.map": "/ReactJSPlatzi/static/js/main.189cbc9e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.99fe6ab6.css",
+    "static/js/main.189cbc9e.js"
+  ]
+}
